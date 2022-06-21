@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>2.5</version>
 	<packaging>war</packaging>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
@@ -40,6 +40,8 @@
 		</dependency>
 	</dependencies>
 
+	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -48,5 +50,20 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
+<distributionManagement>
+	
+	 <repository>
+      <id>FirstNexus</id>
+	<name>FirstNexus-release</name>
+	<url>http://localhost:8081/repository/FirstNexus-release/</url>
+   </repository>
+   <snapshotRepository>
+      <id>FirstNexus</id>
+	<name>FirstNexus-snapshots</name>
+      <url>http://localhost:8081/repository/FirstNexus-snapshots/</url>
+   </snapshotRepository>
+</distributionManagement>
 
 </project>
