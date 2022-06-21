@@ -52,18 +52,5 @@
 	</build>
 
 
-<distributionManagement>
-	
-	 <repository>
-      <id>FirstNexus</id>
-	<name>FirstNexus-release</name>
-	<url>http://localhost:8081/repository/FirstNexus/</url>
-   </repository>
-   <snapshotRepository>
-      <id>FirstNexus</id>
-	<name>FirstNexus-snapshots</name>
-      <url>http://localhost:8081/repository/FirstNexus/</url>
-   </snapshotRepository>
-</distributionManagement>
 
 </project>
