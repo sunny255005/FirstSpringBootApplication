@@ -34,4 +34,12 @@ public class DemoApplication {
 		return String.format("Hello %s!", name);
 	}
 
+	@RestController
+public class DockerMessageController {
+    @GetMapping("/messages")
+    public String getMessage() {
+        return "<center><h1>Hello from Docker!<h1></center>";
+    }
+}
+
 }
